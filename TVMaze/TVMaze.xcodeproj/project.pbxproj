@@ -21,6 +21,8 @@
 		2824A3FD263793DE00A17729 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A3FC263793DE00A17729 /* BaseViewController.swift */; };
 		2824A4052637971400A17729 /* ViewCodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A4042637971400A17729 /* ViewCodeComponent.swift */; };
 		2824A40A2637982900A17729 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A4092637982900A17729 /* BaseView.swift */; };
+		2824A41526379E9900A17729 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A41426379E9900A17729 /* Localization.swift */; };
+		2824A41A26379FFC00A17729 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A41926379FFC00A17729 /* HomeTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		2824A3FC263793DE00A17729 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2824A4042637971400A17729 /* ViewCodeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeComponent.swift; sourceTree = "<group>"; };
 		2824A4092637982900A17729 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		2824A41426379E9900A17729 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		2824A41926379FFC00A17729 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				2824A4042637971400A17729 /* ViewCodeComponent.swift */,
+				2824A41426379E9900A17729 /* Localization.swift */,
+				2824A41926379FFC00A17729 /* HomeTabBar.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -372,12 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2824A3B6263785FF00A17729 /* AppCoordinator.swift in Sources */,
+				2824A41526379E9900A17729 /* Localization.swift in Sources */,
 				2824A3732637810B00A17729 /* AppDelegate.swift in Sources */,
 				2824A3BE2637865700A17729 /* Coordinator.swift in Sources */,
 				2824A37D2637810B00A17729 /* TVMaze.xcdatamodeld in Sources */,
 				2824A4052637971400A17729 /* ViewCodeComponent.swift in Sources */,
 				2824A3752637810B00A17729 /* SceneDelegate.swift in Sources */,
 				2824A3FD263793DE00A17729 /* BaseViewController.swift in Sources */,
+				2824A41A26379FFC00A17729 /* HomeTabBar.swift in Sources */,
 				2824A40A2637982900A17729 /* BaseView.swift in Sources */,
 				2824A3F626378E2F00A17729 /* HomeCoordinator.swift in Sources */,
 				2824A3EE26378E1200A17729 /* HomeViewController.swift in Sources */,

@@ -18,6 +18,9 @@
 		2824A3BE2637865700A17729 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A3BD2637865700A17729 /* Coordinator.swift */; };
 		2824A3EE26378E1200A17729 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A3ED26378E1200A17729 /* HomeViewController.swift */; };
 		2824A3F626378E2F00A17729 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A3F526378E2F00A17729 /* HomeCoordinator.swift */; };
+		2824A3FD263793DE00A17729 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A3FC263793DE00A17729 /* BaseViewController.swift */; };
+		2824A4052637971400A17729 /* ViewCodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A4042637971400A17729 /* ViewCodeComponent.swift */; };
+		2824A40A2637982900A17729 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A4092637982900A17729 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		2824A3BD2637865700A17729 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2824A3ED26378E1200A17729 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2824A3F526378E2F00A17729 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		2824A3FC263793DE00A17729 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2824A4042637971400A17729 /* ViewCodeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeComponent.swift; sourceTree = "<group>"; };
+		2824A4092637982900A17729 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,8 @@
 		2824A3BA2637862200A17729 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2824A3FB2637924C00A17729 /* Utils */,
+				2824A3FA2637923E00A17729 /* Base */,
 				2824A3BB2637862E00A17729 /* Protocol */,
 			);
 			path = Common;
@@ -215,6 +223,23 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2824A3FA2637923E00A17729 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2824A3FC263793DE00A17729 /* BaseViewController.swift */,
+				2824A4092637982900A17729 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2824A3FB2637924C00A17729 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2824A4042637971400A17729 /* ViewCodeComponent.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,7 +375,10 @@
 				2824A3732637810B00A17729 /* AppDelegate.swift in Sources */,
 				2824A3BE2637865700A17729 /* Coordinator.swift in Sources */,
 				2824A37D2637810B00A17729 /* TVMaze.xcdatamodeld in Sources */,
+				2824A4052637971400A17729 /* ViewCodeComponent.swift in Sources */,
 				2824A3752637810B00A17729 /* SceneDelegate.swift in Sources */,
+				2824A3FD263793DE00A17729 /* BaseViewController.swift in Sources */,
+				2824A40A2637982900A17729 /* BaseView.swift in Sources */,
 				2824A3F626378E2F00A17729 /* HomeCoordinator.swift in Sources */,
 				2824A3EE26378E1200A17729 /* HomeViewController.swift in Sources */,
 			);

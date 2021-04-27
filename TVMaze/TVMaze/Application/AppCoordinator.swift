@@ -24,11 +24,32 @@ final class AppCoordinator: Coordinator {
 
 extension AppCoordinator: AppPresenter {
     func showHome() {
-        let coordinator = HomeCoordinator(navigationController: navigationController)
-        coordinator.parentCoordinator = self
-        add(childCoordinator: coordinator)
-        coordinator.start()
+        let homeTabBarController = UITabBarController()
+        navigationController.navigationBar.isHidden = true
+        
+        let homeBarItems: [HomeTabBar] = [.home, .favorites, .people, .profile].sorted(by: {$0.order < $1.order})
+        let navControllers = homeBarItems.map{prepareHomeNavigationController(with: $0)}
+        homeTabBarController.viewControllers = navControllers
+        navigationController.pushViewController(homeTabBarController
+                                                , animated: true)
     }
     
+    
+    private func prepareHomeNavigationController(with homeTabBar: HomeTabBar) -> UIViewController {
+        let navigationController = UINavigationController()
+        
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.tabBarItem = UITabBarItem(title: homeTabBar.title, image: homeTabBar.image, selectedImage: homeTabBar.selectedImage)
+        switch homeTabBar {
+        case .home:
+            let coordinator = HomeCoordinator(navigationController: navigationController)
+            coordinator.parentCoordinator = self
+            add(childCoordinator: coordinator)
+            coordinator.start()
+        default:
+            print("")
+        }
+        return navigationController
+    }
     
 }

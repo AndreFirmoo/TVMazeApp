@@ -23,6 +23,12 @@
 		2824A40A2637982900A17729 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A4092637982900A17729 /* BaseView.swift */; };
 		2824A41526379E9900A17729 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A41426379E9900A17729 /* Localization.swift */; };
 		2824A41A26379FFC00A17729 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A41926379FFC00A17729 /* HomeTabBar.swift */; };
+		2824A4222637B7DC00A17729 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A4212637B7DC00A17729 /* CodeView.swift */; };
+		2824A4272637B90F00A17729 /* HasCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A4262637B90F00A17729 /* HasCodeView.swift */; };
+		2824A42F2637BAA700A17729 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A42E2637BAA700A17729 /* HomeView.swift */; };
+		28300AEC263DCFB50071C63A /* HomeViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28300AEB263DCFB50071C63A /* HomeViewController+UICollectionViewDataSource.swift */; };
+		28300AF4263DD1330071C63A /* HomeViewController+UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28300AF3263DD1330071C63A /* HomeViewController+UICollectionViewDelegates.swift */; };
+		2838F569263A22D400653944 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2838F568263A22D400653944 /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		2824A4092637982900A17729 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		2824A41426379E9900A17729 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		2824A41926379FFC00A17729 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		2824A4212637B7DC00A17729 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		2824A4262637B90F00A17729 /* HasCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCodeView.swift; sourceTree = "<group>"; };
+		2824A42E2637BAA700A17729 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		28300AEB263DCFB50071C63A /* HomeViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		28300AF3263DD1330071C63A /* HomeViewController+UICollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UICollectionViewDelegates.swift"; sourceTree = "<group>"; };
+		2838F568263A22D400653944 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				2824A3BD2637865700A17729 /* Coordinator.swift */,
+				2824A4212637B7DC00A17729 /* CodeView.swift */,
+				2824A4262637B90F00A17729 /* HasCodeView.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -218,6 +232,10 @@
 			isa = PBXGroup;
 			children = (
 				2824A3ED26378E1200A17729 /* HomeViewController.swift */,
+				2824A42E2637BAA700A17729 /* HomeView.swift */,
+				2838F568263A22D400653944 /* HomeCollectionViewCell.swift */,
+				28300AEB263DCFB50071C63A /* HomeViewController+UICollectionViewDataSource.swift */,
+				28300AF3263DD1330071C63A /* HomeViewController+UICollectionViewDelegates.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,17 +396,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2824A3B6263785FF00A17729 /* AppCoordinator.swift in Sources */,
+				28300AEC263DCFB50071C63A /* HomeViewController+UICollectionViewDataSource.swift in Sources */,
 				2824A41526379E9900A17729 /* Localization.swift in Sources */,
 				2824A3732637810B00A17729 /* AppDelegate.swift in Sources */,
+				2824A42F2637BAA700A17729 /* HomeView.swift in Sources */,
 				2824A3BE2637865700A17729 /* Coordinator.swift in Sources */,
 				2824A37D2637810B00A17729 /* TVMaze.xcdatamodeld in Sources */,
+				28300AF4263DD1330071C63A /* HomeViewController+UICollectionViewDelegates.swift in Sources */,
 				2824A4052637971400A17729 /* ViewCodeComponent.swift in Sources */,
+				2838F569263A22D400653944 /* HomeCollectionViewCell.swift in Sources */,
 				2824A3752637810B00A17729 /* SceneDelegate.swift in Sources */,
+				2824A4222637B7DC00A17729 /* CodeView.swift in Sources */,
 				2824A3FD263793DE00A17729 /* BaseViewController.swift in Sources */,
 				2824A41A26379FFC00A17729 /* HomeTabBar.swift in Sources */,
 				2824A40A2637982900A17729 /* BaseView.swift in Sources */,
 				2824A3F626378E2F00A17729 /* HomeCoordinator.swift in Sources */,
 				2824A3EE26378E1200A17729 /* HomeViewController.swift in Sources */,
+				2824A4272637B90F00A17729 /* HasCodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

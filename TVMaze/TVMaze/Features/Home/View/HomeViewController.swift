@@ -13,13 +13,24 @@ protocol HomePresenter {
 
 typealias HomePresenterCoordinator = HomePresenter & Coordinator
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController, HasCodeView {
 
+    typealias CustomView = HomeView
     var coordinator: HomePresenterCoordinator?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        navigationController?.navigationBar.isHidden = true
+        setupView()
+    }
+    deinit {
+        coordinator?.didFinish(child: nil)
+    }
+    private func setupView() {
+        view = HomeView()
+        customView?.collectioView.delegate = self
+        customView?.collectioView.dataSource = self
+      
     }
 }

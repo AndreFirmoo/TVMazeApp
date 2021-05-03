@@ -73,7 +73,10 @@ class HomeView: BaseView, CodeView {
     }
     
     func setupExtraConfiguration() {
-        
+        backgroundColor = .systemBackground
+        stackView.backgroundColor = .systemBackground
+        search.barTintColor = .systemBackground
+        collectioView.backgroundColor = .systemBackground
     }
     
     private func stackViewConstraint() {

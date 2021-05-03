@@ -20,6 +20,7 @@ class HomeView: BaseView, CodeView {
     @ViewCodeComponent
     var search:UISearchBar = {
         var search = UISearchBar(frame: .zero)
+        search.placeholder = "Pesquise o nome da série aqui... "
         return search
     }()
     
@@ -31,6 +32,7 @@ class HomeView: BaseView, CodeView {
         collectionViewLayout.minimumInteritemSpacing = 0
         collectionViewLayout.minimumLineSpacing = 1
         let collection = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
+        collection.register(HeaderCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCollectionReusableView.indenfier)
         collection.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.indentifier)
         return collection
     }()

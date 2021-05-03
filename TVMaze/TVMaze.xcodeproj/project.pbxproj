@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2807FF7C263F45AA00C65C77 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807FF7B263F45AA00C65C77 /* HeaderCollectionReusableView.swift */; };
 		2824A3732637810B00A17729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A3722637810B00A17729 /* AppDelegate.swift */; };
 		2824A3752637810B00A17729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2824A3742637810B00A17729 /* SceneDelegate.swift */; };
 		2824A37D2637810B00A17729 /* TVMaze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2824A37B2637810B00A17729 /* TVMaze.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2807FF7B263F45AA00C65C77 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		2824A36F2637810B00A17729 /* TVMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2824A3722637810B00A17729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2824A3742637810B00A17729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -104,6 +106,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2807FF78263F457700C65C77 /* homeCollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2807FF79263F458600C65C77 /* Header */,
+				2807FF7A263F458B00C65C77 /* Cells */,
+			);
+			path = homeCollectionViewCells;
+			sourceTree = "<group>";
+		};
+		2807FF79263F458600C65C77 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2807FF7B263F45AA00C65C77 /* HeaderCollectionReusableView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		2807FF7A263F458B00C65C77 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2838F568263A22D400653944 /* HomeCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		2824A3662637810B00A17729 = {
 			isa = PBXGroup;
 			children = (
@@ -231,9 +258,9 @@
 		2824A3CA26378C3D00A17729 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2807FF78263F457700C65C77 /* homeCollectionViewCells */,
 				2824A3ED26378E1200A17729 /* HomeViewController.swift */,
 				2824A42E2637BAA700A17729 /* HomeView.swift */,
-				2838F568263A22D400653944 /* HomeCollectionViewCell.swift */,
 				28300AEB263DCFB50071C63A /* HomeViewController+UICollectionViewDataSource.swift */,
 				28300AF3263DD1330071C63A /* HomeViewController+UICollectionViewDelegates.swift */,
 			);
@@ -407,6 +434,7 @@
 				2838F569263A22D400653944 /* HomeCollectionViewCell.swift in Sources */,
 				2824A3752637810B00A17729 /* SceneDelegate.swift in Sources */,
 				2824A4222637B7DC00A17729 /* CodeView.swift in Sources */,
+				2807FF7C263F45AA00C65C77 /* HeaderCollectionReusableView.swift in Sources */,
 				2824A3FD263793DE00A17729 /* BaseViewController.swift in Sources */,
 				2824A41A26379FFC00A17729 /* HomeTabBar.swift in Sources */,
 				2824A40A2637982900A17729 /* BaseView.swift in Sources */,

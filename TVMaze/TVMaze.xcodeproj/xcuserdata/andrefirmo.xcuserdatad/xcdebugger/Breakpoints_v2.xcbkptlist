@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D29BB69-006A-47D2-8A71-72975869EA92"
+            uuid = "19FF6FA7-5DF8-4C42-B9DC-F102F001ACC5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TVMaze/Features/Home/View/HomeViewController.swift"
+            filePath = "TVMaze/Common/Base/BaseView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2E28C4D6-5C67-465F-9DA7-9BD8BFF534A7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVMaze/Application/SceneDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "scrollViewConstraints()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

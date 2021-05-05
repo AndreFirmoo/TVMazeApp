@@ -50,9 +50,7 @@ final class HomeCollectionViewCell: UICollectionViewCell, CodeView {
         titleCellConstraint()
     }
     
-    func setupExtraConfiguration() {
-        
-    }
+    func setupExtraConfiguration() {}
     
     private func imageCellConstraint() {
         imageCell.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
@@ -67,5 +65,4 @@ final class HomeCollectionViewCell: UICollectionViewCell, CodeView {
         title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5).isActive = true
         title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5).isActive = true
     }
-    
 }

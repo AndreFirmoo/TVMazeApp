@@ -61,15 +61,12 @@ class HomeView: BaseView, CodeView {
         stackView.addArrangedSubview(viewSearch)
         stackView.addArrangedSubview(collectioView)
         viewSearch.addSubview(search)
-        
-        
     }
     
     func setupConstraints() {
         stackViewConstraint()
         viewSearchConstraint()
         searchContraint()
-        collectionViewConstraint()
     }
     
     func setupExtraConfiguration() {
@@ -94,8 +91,4 @@ class HomeView: BaseView, CodeView {
         search.trailingAnchor.constraint(equalTo: viewSearch.trailingAnchor, constant: -10).isActive = true
         search.leadingAnchor.constraint(equalTo: viewSearch.leadingAnchor, constant: 10).isActive = true
     }
-    private func collectionViewConstraint() {
-        
-    }
-
 }

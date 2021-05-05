@@ -39,7 +39,6 @@ class HeaderCollectionReusableView: UICollectionReusableView, CodeView {
         titleOfSection.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
         titleOfSection.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5).isActive = true
         titleOfSection.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5).isActive = true
-
     }
     
     func setupExtraConfiguration() {}

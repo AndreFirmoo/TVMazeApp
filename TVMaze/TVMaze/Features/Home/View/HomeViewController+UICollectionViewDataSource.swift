@@ -22,9 +22,7 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        // Create header
         if (kind == UICollectionView.elementKindSectionHeader) {
-            // Create Header
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCollectionReusableView.indenfier, for: indexPath as IndexPath) as! HeaderCollectionReusableView
             headerView.backgroundColor = .brown
             return headerView

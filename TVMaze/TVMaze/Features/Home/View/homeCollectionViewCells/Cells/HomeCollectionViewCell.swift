@@ -8,6 +8,7 @@
 import UIKit
 
 final class HomeCollectionViewCell: UICollectionViewCell, CodeView {
+  
     
     static let indentifier = "ListShows"
     
@@ -36,8 +37,10 @@ final class HomeCollectionViewCell: UICollectionViewCell, CodeView {
         super.init(coder: aDecoder)
     }
     
-    func prepareCells(){
-        // TODO: Implementar a regra de exibição da celula
+    func prepareCells(with viewModel: HomeShowViewModelCells) {
+        imageCell.image = UIImage(systemName: viewModel.image)
+        title.text = "\(viewModel.title)"
+        
     }
     
     func setupComponents() {
@@ -49,7 +52,6 @@ final class HomeCollectionViewCell: UICollectionViewCell, CodeView {
         imageCellConstraint()
         titleCellConstraint()
     }
-    
     func setupExtraConfiguration() {}
     
     private func imageCellConstraint() {

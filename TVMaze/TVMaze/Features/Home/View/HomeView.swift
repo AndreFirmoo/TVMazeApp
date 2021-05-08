@@ -78,8 +78,8 @@ class HomeView: BaseView, CodeView {
     
     private func stackViewConstraint() {
         stackView.topAnchor.constraint(equalTo: topAnchor, constant: 35).isActive = true
-        stackView.leadingAnchor.constraint(equalTo:leadingAnchor, constant:5).isActive = true
-        stackView.trailingAnchor.constraint(equalTo:trailingAnchor, constant: -5).isActive = true
+        stackView.leadingAnchor.constraint(equalTo:layoutMarginsGuide.leadingAnchor, constant:0).isActive = true
+        stackView.trailingAnchor.constraint(equalTo:layoutMarginsGuide.trailingAnchor, constant:0).isActive = true
         stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
     }
     private func viewSearchConstraint() {

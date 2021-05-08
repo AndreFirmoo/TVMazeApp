@@ -9,23 +9,34 @@ import UIKit
 
 extension HomeViewController: UICollectionViewDataSource {
     
-  
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return mockHeader.count
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return mockData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.indentifier, for: indexPath) as! HomeCollectionViewCell
         cell.backgroundColor = .systemTeal
-        cell.imageCell.image = UIImage(systemName: "house")
+        let model = mockData[indexPath.item]
+        let viewModel = HomeShowViewModelCells(image: model.image, title: model.title)
+        cell.prepareCells(with: viewModel)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if (kind == UICollectionView.elementKindSectionHeader) {
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCollectionReusableView.indenfier, for: indexPath as IndexPath) as! HeaderCollectionReusableView
+            
+            let model = mockHeader[indexPath.section]
+            let viewModel = HomeShowViewModelHeader(title: model.title)
+            headerView.prepareHeader(with: viewModel)
             headerView.backgroundColor = .brown
             return headerView
+            
         }
         return UICollectionReusableView()
     }

@@ -14,7 +14,6 @@ class HeaderCollectionReusableView: UICollectionReusableView, CodeView {
     @ViewCodeComponent
     var titleOfSection: UILabel = {
         var title = UILabel(frame: .zero)
-        title.text = "teste"
         title.numberOfLines = 0
         title.textColor = .white
         title.font = UIFont.systemFont(ofSize: 35.0)
@@ -43,7 +42,11 @@ class HeaderCollectionReusableView: UICollectionReusableView, CodeView {
     
     func setupExtraConfiguration() {}
     
-    
-    
+    func prepareHeader(with viewModel: HomeShowViewModelHeader){
+        titleOfSection.text = "\(viewModel.title)"
+    }
+    override func prepareForReuse() {
+        titleOfSection.text = nil
+    }
   
 }
